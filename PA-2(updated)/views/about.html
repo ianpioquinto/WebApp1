@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="about">About Us</a></li>
+          <li><a href="contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/">Home</a></li>
+      <li><a href="about">About Us</a></li>
+      <li><a href="contact">Contact Us</a></li>
+    </ul>
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-title">About Me</span>
+              <p>Hi guys! My name is Regin Ian Pioquinto. I'm from the Philippines.</p>
+              <p>I am a 3rd year BS Information Technology Student in Ateneo de Davao University. </p>    
+              <p>I started streaming for fun and I want people to see how I play.</p>
+              <p>I also love to dance and watch anime.</p>
+              <p>So recommend me some anime to watch <3</p>
+              <p>Games:</p>
+              <p>• Valorant</p>
+              <p>• Apex Legends</p>
+              <p>• Dota 2</p>
+              <p>• Black Desert Online</p>
+              <p>Drop a chat and say hi, invite me in a game and lets play. That's all</p>
+              <p>Arigato Gosaimashita <3</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+  </script>
+  </body>
+</html>

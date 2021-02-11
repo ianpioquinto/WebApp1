@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!-- Import Google Icon Font -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About Us</a></li>
+        <li><a href="contact">Contact Us</a></li>
+      </ul>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-title">Loren Ipsum</span>
+              <p>Lorem ipsum dolor sit amet consectetur </p>
+              <p>adipisicing elit. Repellendus omnis cumque saepe nemo,</p>
+              <p>quam deserunt rerum autem provident consectetur</p>
+              <p>aperiam ducimus necessitatibus quas mollitia porro</p> 
+              <p>molestias? Rerum, voluptates minus ea eius</p>
+              <p>incidunt ipsa temporibus doloribus. Ipsum animi</p> 
+              <p>placeat repellat non mollitia incidunt, quibusdam</p> 
+              <p>accusantium aperiam blanditiis et voluptatem aliquam</p> 
+              <p>est beatae dolorem nulla accusamus laudantium iusto</p>
+              <p>tempora cum qui deleniti debitis ex architecto cupiditate?</p>
+              <p>Repellat laboriosam ut inventore deleniti sit tempore esse!</p>
+              <p>Libero odit pariatur, quia laboriosam cumque dolore doloremque.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    </body>
+  </html>
