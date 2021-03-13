@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+    crossorigin="anonymous">
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Others</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <div class="row d-flex justify-content-center">
+            <center>
+                <h3><%= weather[0]['location']['name'] %> </h3> 
+                <img src="earth.png" style="width: 250px; height: 250px;">
+                <h3><%= weather[0]['location']['lat'] %>° N, <%= weather[0]['location']['long'] %>° E</h3> 
+
+            <div class="row">
+                <% for(forecast of weather[0]['forecast']){ %>
+                    <div class="col">
+                        <img src="<%= forecast['skytextday'] %>.png">
+                        <h4><%= forecast['skytextday'] %></h4>
+                        <h4><%= forecast['day'] %></h4>
+                        <h4><%= forecast['date'] %></h4>
+                        <h4>Low <%= forecast['low'] %>°</h4>
+                        <h4>High <%= forecast['high'] %>°</h4>
+                    </div>
+                <% } %> 
+            </div>  
+            </center>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+    crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "pa-3",
+  "version": "1.0.0",
+  "description": "This is my first node app created in vscode",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "weather-js": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Weather",
+    "PA-3",
+    "Sana",
+    "Magraduate",
+    "Tayo"
+  ],
+  "author": "Pioquinto",
+  "license": "ISC"
+}
