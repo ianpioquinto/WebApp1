@@ -1,0 +1,30 @@
+<html>
+  
+    <%- include('./partials/header') %> 
+
+  <body style="background-color: #13274F">
+    <center>
+      <img src="../assets/chika22.png" style="margin-top: 150px; width: 450px; height: 220px;">
+      <div class="column" style="margin-top: 50px;">
+        <a href="https://twitter.com/IanPioquinto"><img src="../assets/twitter.png" width="40px" height="40px"></a>
+        <a href="https://www.facebook.com/ianpioquinto56/"><img src="../assets/fb.png" width="40px" height="40px"></a>
+        <a href="https://github.com/ianpioquinto/WebApp1.git"><img src="../assets/github.png" width="40px" height="40px"></a>
+      </div>
+      <div class="column" style="margin-top: 50px;">
+        <form action="/personlist" method="POST">
+        <select class="form-select-sm" name="location">
+          <option selected>time zone</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Asia/Seoul">Seoul</option>
+          <option value="Asia/Macau">Macau</option>
+          <option value="Asia/Singapore">Singapore</option>
+          <option value="Asia/Manila">Manila</option>
+        </select>
+        <button type="submit">Join</button>
+        </form>
+      </div>
+    </center>
+    
+    <%- include('./partials/footer') %> 
+  </body>
+</html>

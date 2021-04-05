@@ -1,0 +1,28 @@
+<html>
+    <%- include('./partials/header') %> 
+    <body style="background-color: #13274F;">
+        <%- include('./partials/navigation') %> 
+        <Center>
+        <div class="card" style="width: 25rem; margin-top: 250px;">
+            <div class="card-body col">
+                <form action="/spectacle" method="POST">
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" onfocus="this.value=''" value="<%= people.fullname %>" name="fullname">
+                    </div>
+                    <div style="margin-right: 5px; margin-top: 15px;">
+                        <label for="nationality">Nationality</label>
+                        <input type="text" id="nationality" value="<%= people.nationality %>" name="nationality">
+                    </div>
+                    <div style="margin-left: 7px; margin-top: 15px;">
+                        <label for="birthdate">Birthdate</label>
+                        <input type="date" id="birthdate" onfocus="this.value=''" value="<%= people.birthdate %>" name="birthdate">
+                    </div>
+                    <a href="/" role="button" class="btn btn-sm" style="margin-left: 230px; margin-top: 20px;">Exit</a>
+                </form>
+            </div>
+            </div>
+        </Center>
+        <%- include('./partials/footer') %> 
+    </body>
+</html>

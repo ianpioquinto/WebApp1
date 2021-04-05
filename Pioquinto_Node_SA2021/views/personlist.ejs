@@ -1,0 +1,48 @@
+<html>
+
+  <%- include('./partials/header') %> 
+
+  <body style="background-color: #13274F;">
+    <%- include('./partials/navigation') %> 
+      <div class="row d-flex justify-content-center" style="margin-top: 35px;">
+          <img src="../assets/<%= flags %>" style="width: 250px;">
+          <h1 class="d-flex justify-content-center text-light display-4 pt-3"><%= date %></h1>
+          <h1 class="d-flex justify-content-center text-light display-4 pt-3"><%= time %></h1>
+      </div>
+      <center>
+      <div style="margin-top: 50px;">
+        <form method="GET" action="/newperson">
+          <button type="submit" style="margin-left: 850px;">Add</button>
+        </form>
+        <table class="table table-dark" style="width: 900px;">
+          <thead>
+            <th>ID</th>
+            <th>Fullname</th>
+            <th>Birthdate</th>
+            <th>Nationality</th>
+            <th>Actions</th>
+          </thead>
+          <tbody>
+            <% var id = 1 %>
+            <% for (p of people){ %>
+              <tr>
+                <th><%=id%></th>
+                <th><%=p["fullname"]%></th>
+                <th><%=p["birthdate"]%></th>
+                <th><%=p["nationality"]%></th>
+                <th>
+                    <form action="/viewperson" method="GET">
+                      <input hidden type="text" value="<%= p["_id"]%>" name="id">
+                      <a href="/viewperson/<%= p._id %>" type="button">View</a>
+                    </form>
+                </th>
+              </tr>
+            <% id++; }%>
+          </tbody>
+        </table>
+      </div>
+    </center>
+    
+    <%- include('./partials/footer') %> 
+  </body>
+</html>
